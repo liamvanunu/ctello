@@ -18,19 +18,7 @@
 
 #include <iostream>
 
-#include "ctello.h"
-
-
-using ctello::Tello;
-
 int main()
 {
-    Tello tello{};
-    tello.SendCommand("takeoff");
-    for (int i = 0; i < 20; ++i)
-    {
-        tello.SendCommand("rc 0 40 0 0");
-        sleep(1);
-    }
-    tello.SendCommandWithResponse("land");
+    return 0;
 }
